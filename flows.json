@@ -1,0 +1,2113 @@
+[
+    {
+        "id": "ed9a217f0f0892d5",
+        "type": "tab",
+        "label": "Scheda rele ETH008",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "5899172ec603b347",
+        "type": "group",
+        "z": "ed9a217f0f0892d5",
+        "name": "Rele PULSE",
+        "style": {
+            "stroke": "none",
+            "fill": "#0070c0",
+            "label": true
+        },
+        "nodes": [
+            "7676414a63f29b4d",
+            "271af57b1df9827e",
+            "984ab6e1b5c74589",
+            "16bf9d5d0cf3bf95",
+            "0e2072374e052cb5",
+            "70cb576b94c5fcaf",
+            "663344bbab22280c",
+            "6f05e33d484450a2",
+            "bb693ea94c442e2d",
+            "c097712edf1c8489",
+            "03f551159c4c6114",
+            "59c281e7c6ad1201",
+            "bec8412b03108d45",
+            "9da598856d4bae4f",
+            "73f06ff7115c0425",
+            "4b52f7c5e0772ab6"
+        ],
+        "x": 94,
+        "y": 1239,
+        "w": 282,
+        "h": 362
+    },
+    {
+        "id": "67423a9b7cd26803",
+        "type": "group",
+        "z": "ed9a217f0f0892d5",
+        "name": "Rele TOGGLE",
+        "style": {
+            "stroke": "none",
+            "fill": "#0070c0",
+            "label": true
+        },
+        "nodes": [
+            "51cc4e3507317750",
+            "29cbc371ecbe734e",
+            "dd4693140c0e6b9e",
+            "0a025146911f9c4e",
+            "57c413933add88fe",
+            "802836b2e6229014",
+            "1ceb6cbcbf17baf6",
+            "ccd90fddb325504a",
+            "0648470c9022caf4",
+            "c9201f1a418b45e0",
+            "9932fa6078c006a3",
+            "5ab586bf910ac45b",
+            "ff4d4b75841c812e",
+            "d8797ffb44a93283",
+            "6c1b3f20bb964646",
+            "63acd6932c1d13a1",
+            "676f7a1314fa39f8",
+            "94c72d79740aecd5",
+            "b27a6206fb2efceb",
+            "29c8691dc52b925b",
+            "2fd3b0230b0cc7da",
+            "ac704d0d87b5532e",
+            "1a043a26425c537b",
+            "9c28d5563f9c3b34",
+            "9d9196a6c51d22d0",
+            "cad65622b1d99f19",
+            "75bdb771b2611293"
+        ],
+        "x": 74,
+        "y": 219,
+        "w": 932,
+        "h": 882
+    },
+    {
+        "id": "cab817aa74210f5c",
+        "type": "group",
+        "z": "ed9a217f0f0892d5",
+        "name": "FB Scheda rele ETH008",
+        "style": {
+            "fill": "#0070c0",
+            "label": true
+        },
+        "nodes": [
+            "8206c7f43b522435",
+            "06ac0ce9f61a7ff1",
+            "42df7235dc7007ea",
+            "95eb7da8a317f4c9",
+            "d83de80b804a71f0",
+            "af5bb22c6507ceed",
+            "dca73ab3b4b8856f",
+            "48af154fb7c4f58a",
+            "3b2210bcce626da1",
+            "3bc9bfb9e1cbda07",
+            "1790209d983e1e5d",
+            "dec7dec4d69b60a6",
+            "18a4beca6cc95bcc",
+            "d98e1cc92541f903",
+            "558ffe289ac52140",
+            "f30e218e5ce92f26",
+            "e52b93fbf3737831",
+            "c4ebc76194ffa590",
+            "912d315eae5d8324",
+            "fb06505be969b3a4",
+            "8ce52afe651665a2",
+            "7f167e517525fea0",
+            "953121fd9d4aa0f8",
+            "b2bb4f9689b88691",
+            "2fbf1bfb493cfca6",
+            "4f7e25502583d08d",
+            "25b61c0b0b85891b",
+            "f3937d781e4e0b5e",
+            "08395f6ac08b24da",
+            "3bc971d8628951d5",
+            "2730b697df864147",
+            "94590d621017e17b",
+            "54777178a26be570"
+        ],
+        "x": 1114,
+        "y": 479,
+        "w": 1052,
+        "h": 682
+    },
+    {
+        "id": "1d8014caf05325fd",
+        "type": "Controller",
+        "z": "ed9a217f0f0892d5",
+        "name": "MU-1300",
+        "mojo": {
+            "controller": "192.168.1.187:80",
+            "protocol": "http",
+            "host": "192.168.1.187",
+            "port": 80,
+            "username": "admin",
+            "password": "PzSoluzioni2024"
+        },
+        "x": 100,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "1359b4b67ecf9670",
+        "type": "Control Panel",
+        "z": "ed9a217f0f0892d5",
+        "name": "TouchPanel",
+        "mojo": {
+            "device": "AMX-10001",
+            "md5": "7d88d13a5190dc1c0b116363fb6fa9e7",
+            "tp5": "Prova VARIA.TP5"
+        },
+        "x": 370,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "3cb9dafbb8e6b868",
+        "type": "tcp request",
+        "z": "ed9a217f0f0892d5",
+        "name": "Scheda rele ETH 008",
+        "server": "192.168.1.111",
+        "port": "17494",
+        "out": "sit",
+        "ret": "buffer",
+        "splitc": " ",
+        "newline": "",
+        "trim": false,
+        "tls": "",
+        "x": 800,
+        "y": 160,
+        "wires": [
+            [
+                "48b5a68978214523"
+            ]
+        ]
+    },
+    {
+        "id": "51cc4e3507317750",
+        "type": "inject",
+        "z": "ed9a217f0f0892d5",
+        "g": "67423a9b7cd26803",
+        "name": "Richiesta stato rele",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "Richiesta Stato Rele",
+        "payload": "StatoGenerale",
+        "payloadType": "str",
+        "x": 220,
+        "y": 260,
+        "wires": [
+            [
+                "dd4693140c0e6b9e"
+            ]
+        ]
+    },
+    {
+        "id": "2565c7216b3313d8",
+        "type": "function",
+        "z": "ed9a217f0f0892d5",
+        "name": "ETH 008 Gestione Comandi",
+        "func": "\nif (msg.payload == 'StatoGenerale') \n    {\n    //var char = Buffer.from([0x24]);\n    msg.payload = \"$\";\n    }\n\nelse\n    {\n    // ricavo Nr Rele da comandare\n    var NrRele = parseInt(msg.payload[4]);\n\n    if (msg.payload[6] == 'n') // Comando ON\n        {\n        // compongo il messaggio\n        msg.payload = Buffer.from([0x20, NrRele, 0x00]);\n        }\n\n    else if (msg.payload[6] == 'f') // Comando OFF\n        {\n        // compongo il messaggio\n        msg.payload = Buffer.from([0x21, NrRele, 0x00]);\n        }\n\n    else if (msg.payload[6] == 'u') // Comando PULSE\n        {\n        // compongo il messaggio\n        msg.payload = Buffer.from([0x20, NrRele, 0x05]);\n        }\n    }\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 160,
+        "wires": [
+            [
+                "3cb9dafbb8e6b868"
+            ]
+        ]
+    },
+    {
+        "id": "8206c7f43b522435",
+        "type": "function",
+        "z": "ed9a217f0f0892d5",
+        "g": "cab817aa74210f5c",
+        "name": "Parsing Risposta",
+        "func": "// processo solo se è la risposta ad una richiesta\nif (msg.topic == \"Richiesta Stato Rele\")\n    {\n    // trasformo in binario per valutare il singolo rele\n    // output conterrà un valore tipo 10000010\n    var output = parseInt(msg.payload[0], 10);\n\n    var StatoRele8;\n    if (output & 128) StatoRele8 = 'ON'\n    else StatoRele8 = 'OFF'\n    flow.set(\"Rele8\", StatoRele8);\n\n    var StatoRele7;\n    if (output & 64) StatoRele7 = 'ON'\n    else StatoRele7 = 'OFF'\n    flow.set(\"Rele7\", StatoRele7);\n\n    var StatoRele6;\n    if (output & 32) StatoRele6 = 'ON'\n    else StatoRele6 = 'OFF'\n    flow.set(\"Rele6\", StatoRele6);\n\n    var StatoRele5;\n    if (output & 16) StatoRele5 = 'ON'\n    else StatoRele5 = 'OFF'\n    flow.set(\"Rele5\", StatoRele5);\n\n    var StatoRele4;\n    if (output & 8) StatoRele4 = 'ON'\n    else StatoRele4 = 'OFF'\n    flow.set(\"Rele4\", StatoRele4);\n\n    var StatoRele3;\n    if (output & 4) StatoRele3 = 'ON'\n    else StatoRele3 = 'OFF'\n    flow.set(\"Rele3\", StatoRele3);\n\n    var StatoRele2;\n    if (output & 2) StatoRele2 = 'ON'\n    else StatoRele2 = 'OFF'\n    flow.set(\"Rele2\", StatoRele2);\n\n    var StatoRele1;\n    if (output & 1) StatoRele1 = 'ON'\n    else StatoRele1 = 'OFF'\n    flow.set(\"Rele1\", StatoRele1);\n\n    //msg.payload = output;\n\n    msg.payload = { StatoRele8, \n                    StatoRele7,\n                    StatoRele6,\n                    StatoRele5,\n                    StatoRele4,\n                    StatoRele3,\n                    StatoRele2,\n                    StatoRele1}\n    \n    return msg;  \n    }",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1230,
+        "y": 880,
+        "wires": [
+            [
+                "06ac0ce9f61a7ff1",
+                "95eb7da8a317f4c9",
+                "af5bb22c6507ceed",
+                "48af154fb7c4f58a",
+                "d98e1cc92541f903",
+                "f30e218e5ce92f26",
+                "7f167e517525fea0",
+                "b2bb4f9689b88691"
+            ]
+        ]
+    },
+    {
+        "id": "06ac0ce9f61a7ff1",
+        "type": "function",
+        "z": "ed9a217f0f0892d5",
+        "g": "cab817aa74210f5c",
+        "name": "Estraggo Stato Rele1",
+        "func": "var messaggio = msg.payload.StatoRele1;\n\nmsg.payload = messaggio;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1680,
+        "y": 540,
+        "wires": [
+            [
+                "42df7235dc7007ea"
+            ]
+        ]
+    },
+    {
+        "id": "42df7235dc7007ea",
+        "type": "switch",
+        "z": "ed9a217f0f0892d5",
+        "g": "cab817aa74210f5c",
+        "name": "Rele1",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "ON",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "OFF",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1870,
+        "y": 540,
+        "wires": [
+            [
+                "3bc9bfb9e1cbda07"
+            ],
+            [
+                "1790209d983e1e5d"
+            ]
+        ]
+    },
+    {
+        "id": "95eb7da8a317f4c9",
+        "type": "function",
+        "z": "ed9a217f0f0892d5",
+        "g": "cab817aa74210f5c",
+        "name": "Estraggo Stato Rele2",
+        "func": "var messaggio = msg.payload.StatoRele2;\n\nmsg.payload = messaggio;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1680,
+        "y": 620,
+        "wires": [
+            [
+                "d83de80b804a71f0"
+            ]
+        ]
+    },
+    {
+        "id": "d83de80b804a71f0",
+        "type": "switch",
+        "z": "ed9a217f0f0892d5",
+        "g": "cab817aa74210f5c",
+        "name": "Rele2",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "ON",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "OFF",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1870,
+        "y": 620,
+        "wires": [
+            [
+                "dec7dec4d69b60a6"
+            ],
+            [
+                "18a4beca6cc95bcc"
+            ]
+        ]
+    },
+    {
+        "id": "af5bb22c6507ceed",
+        "type": "function",
+        "z": "ed9a217f0f0892d5",
+        "g": "cab817aa74210f5c",
+        "name": "Estraggo Stato Rele7",
+        "func": "var messaggio = msg.payload.StatoRele7;\n\nmsg.payload = messaggio;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1680,
+        "y": 1020,
+        "wires": [
+            [
+                "dca73ab3b4b8856f"
+            ]
+        ]
+    },
+    {
+        "id": "dca73ab3b4b8856f",
+        "type": "switch",
+        "z": "ed9a217f0f0892d5",
+        "g": "cab817aa74210f5c",
+        "name": "Rele7",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "ON",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "OFF",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1870,
+        "y": 1020,
+        "wires": [
+            [
+                "3bc971d8628951d5"
+            ],
+            [
+                "2730b697df864147"
+            ]
+        ]
+    },
+    {
+        "id": "48af154fb7c4f58a",
+        "type": "function",
+        "z": "ed9a217f0f0892d5",
+        "g": "cab817aa74210f5c",
+        "name": "Estraggo Stato Rele8",
+        "func": "var messaggio = msg.payload.StatoRele8;\n\nmsg.payload = messaggio;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1680,
+        "y": 1100,
+        "wires": [
+            [
+                "3b2210bcce626da1"
+            ]
+        ]
+    },
+    {
+        "id": "3b2210bcce626da1",
+        "type": "switch",
+        "z": "ed9a217f0f0892d5",
+        "g": "cab817aa74210f5c",
+        "name": "Rele8",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "ON",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "OFF",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1870,
+        "y": 1100,
+        "wires": [
+            [
+                "94590d621017e17b"
+            ],
+            [
+                "54777178a26be570"
+            ]
+        ]
+    },
+    {
+        "id": "3bc9bfb9e1cbda07",
+        "type": "Command",
+        "z": "ed9a217f0f0892d5",
+        "g": "cab817aa74210f5c",
+        "name": "Bt Rele1 ON",
+        "mojo": {
+            "device": "AMX-10001",
+            "command": "//port/1/channel/1",
+            "normalized": false,
+            "cmdvalue": "Manual configuration",
+            "args": true,
+            "onebased": true
+        },
+        "x": 2050,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1790209d983e1e5d",
+        "type": "Command",
+        "z": "ed9a217f0f0892d5",
+        "g": "cab817aa74210f5c",
+        "name": "Bt Rele1 OFF",
+        "mojo": {
+            "device": "AMX-10001",
+            "command": "//port/1/channel/1",
+            "normalized": false,
+            "cmdvalue": "Manual configuration",
+            "args": false,
+            "onebased": true
+        },
+        "x": 2060,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dec7dec4d69b60a6",
+        "type": "Command",
+        "z": "ed9a217f0f0892d5",
+        "g": "cab817aa74210f5c",
+        "name": "Bt Rele2 ON",
+        "mojo": {
+            "device": "AMX-10001",
+            "command": "//port/1/channel/2",
+            "normalized": false,
+            "cmdvalue": "Manual configuration",
+            "args": true,
+            "onebased": true
+        },
+        "x": 2050,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "18a4beca6cc95bcc",
+        "type": "Command",
+        "z": "ed9a217f0f0892d5",
+        "g": "cab817aa74210f5c",
+        "name": "Bt Rele2 OFF",
+        "mojo": {
+            "device": "AMX-10001",
+            "command": "//port/1/channel/2",
+            "normalized": false,
+            "cmdvalue": "Manual configuration",
+            "args": false,
+            "onebased": true
+        },
+        "x": 2060,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d98e1cc92541f903",
+        "type": "function",
+        "z": "ed9a217f0f0892d5",
+        "g": "cab817aa74210f5c",
+        "name": "Estraggo Stato Rele3",
+        "func": "var messaggio = msg.payload.StatoRele3;\n\nmsg.payload = messaggio;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1680,
+        "y": 700,
+        "wires": [
+            [
+                "558ffe289ac52140"
+            ]
+        ]
+    },
+    {
+        "id": "558ffe289ac52140",
+        "type": "switch",
+        "z": "ed9a217f0f0892d5",
+        "g": "cab817aa74210f5c",
+        "name": "Rele3",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "ON",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "OFF",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1870,
+        "y": 700,
+        "wires": [
+            [
+                "c4ebc76194ffa590"
+            ],
+            [
+                "912d315eae5d8324"
+            ]
+        ]
+    },
+    {
+        "id": "f30e218e5ce92f26",
+        "type": "function",
+        "z": "ed9a217f0f0892d5",
+        "g": "cab817aa74210f5c",
+        "name": "Estraggo Stato Rele4",
+        "func": "var messaggio = msg.payload.StatoRele4;\n\nmsg.payload = messaggio;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1680,
+        "y": 780,
+        "wires": [
+            [
+                "e52b93fbf3737831"
+            ]
+        ]
+    },
+    {
+        "id": "e52b93fbf3737831",
+        "type": "switch",
+        "z": "ed9a217f0f0892d5",
+        "g": "cab817aa74210f5c",
+        "name": "Rele4",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "ON",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "OFF",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1870,
+        "y": 780,
+        "wires": [
+            [
+                "fb06505be969b3a4"
+            ],
+            [
+                "8ce52afe651665a2"
+            ]
+        ]
+    },
+    {
+        "id": "c4ebc76194ffa590",
+        "type": "Command",
+        "z": "ed9a217f0f0892d5",
+        "g": "cab817aa74210f5c",
+        "name": "Bt Rele3 ON",
+        "mojo": {
+            "device": "AMX-10001",
+            "command": "//port/1/channel/3",
+            "normalized": false,
+            "cmdvalue": "Manual configuration",
+            "args": true,
+            "onebased": true
+        },
+        "x": 2050,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "912d315eae5d8324",
+        "type": "Command",
+        "z": "ed9a217f0f0892d5",
+        "g": "cab817aa74210f5c",
+        "name": "Bt Rele3 OFF",
+        "mojo": {
+            "device": "AMX-10001",
+            "command": "//port/1/channel/3",
+            "normalized": false,
+            "cmdvalue": "Manual configuration",
+            "args": false,
+            "onebased": true
+        },
+        "x": 2060,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fb06505be969b3a4",
+        "type": "Command",
+        "z": "ed9a217f0f0892d5",
+        "g": "cab817aa74210f5c",
+        "name": "Bt Rele4 ON",
+        "mojo": {
+            "device": "AMX-10001",
+            "command": "//port/1/channel/4",
+            "normalized": false,
+            "cmdvalue": "Manual configuration",
+            "args": true,
+            "onebased": true
+        },
+        "x": 2050,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8ce52afe651665a2",
+        "type": "Command",
+        "z": "ed9a217f0f0892d5",
+        "g": "cab817aa74210f5c",
+        "name": "Bt Rele4 OFF",
+        "mojo": {
+            "device": "AMX-10001",
+            "command": "//port/1/channel/4",
+            "normalized": false,
+            "cmdvalue": "Manual configuration",
+            "args": false,
+            "onebased": true
+        },
+        "x": 2060,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7f167e517525fea0",
+        "type": "function",
+        "z": "ed9a217f0f0892d5",
+        "g": "cab817aa74210f5c",
+        "name": "Estraggo Stato Rele5",
+        "func": "var messaggio = msg.payload.StatoRele5;\n\nmsg.payload = messaggio;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1680,
+        "y": 860,
+        "wires": [
+            [
+                "953121fd9d4aa0f8"
+            ]
+        ]
+    },
+    {
+        "id": "953121fd9d4aa0f8",
+        "type": "switch",
+        "z": "ed9a217f0f0892d5",
+        "g": "cab817aa74210f5c",
+        "name": "Rele5",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "ON",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "OFF",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1870,
+        "y": 860,
+        "wires": [
+            [
+                "4f7e25502583d08d"
+            ],
+            [
+                "25b61c0b0b85891b"
+            ]
+        ]
+    },
+    {
+        "id": "b2bb4f9689b88691",
+        "type": "function",
+        "z": "ed9a217f0f0892d5",
+        "g": "cab817aa74210f5c",
+        "name": "Estraggo Stato Rele6",
+        "func": "var messaggio = msg.payload.StatoRele6;\n\nmsg.payload = messaggio;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1680,
+        "y": 940,
+        "wires": [
+            [
+                "2fbf1bfb493cfca6"
+            ]
+        ]
+    },
+    {
+        "id": "2fbf1bfb493cfca6",
+        "type": "switch",
+        "z": "ed9a217f0f0892d5",
+        "g": "cab817aa74210f5c",
+        "name": "Rele6",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "ON",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "OFF",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1870,
+        "y": 940,
+        "wires": [
+            [
+                "f3937d781e4e0b5e"
+            ],
+            [
+                "08395f6ac08b24da"
+            ]
+        ]
+    },
+    {
+        "id": "4f7e25502583d08d",
+        "type": "Command",
+        "z": "ed9a217f0f0892d5",
+        "g": "cab817aa74210f5c",
+        "name": "Bt Rele5 ON",
+        "mojo": {
+            "device": "AMX-10001",
+            "command": "//port/1/channel/5",
+            "normalized": false,
+            "cmdvalue": "Manual configuration",
+            "args": true,
+            "onebased": true
+        },
+        "x": 2050,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "25b61c0b0b85891b",
+        "type": "Command",
+        "z": "ed9a217f0f0892d5",
+        "g": "cab817aa74210f5c",
+        "name": "Bt Rele5 OFF",
+        "mojo": {
+            "device": "AMX-10001",
+            "command": "//port/1/channel/5",
+            "normalized": false,
+            "cmdvalue": "Manual configuration",
+            "args": false,
+            "onebased": true
+        },
+        "x": 2060,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f3937d781e4e0b5e",
+        "type": "Command",
+        "z": "ed9a217f0f0892d5",
+        "g": "cab817aa74210f5c",
+        "name": "Bt Rele6 ON",
+        "mojo": {
+            "device": "AMX-10001",
+            "command": "//port/1/channel/6",
+            "normalized": false,
+            "cmdvalue": "Manual configuration",
+            "args": true,
+            "onebased": true
+        },
+        "x": 2050,
+        "y": 920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "08395f6ac08b24da",
+        "type": "Command",
+        "z": "ed9a217f0f0892d5",
+        "g": "cab817aa74210f5c",
+        "name": "Bt Rele6 OFF",
+        "mojo": {
+            "device": "AMX-10001",
+            "command": "//port/1/channel/6",
+            "normalized": false,
+            "cmdvalue": "Manual configuration",
+            "args": false,
+            "onebased": true
+        },
+        "x": 2060,
+        "y": 960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3bc971d8628951d5",
+        "type": "Command",
+        "z": "ed9a217f0f0892d5",
+        "g": "cab817aa74210f5c",
+        "name": "Bt Rele7ON",
+        "mojo": {
+            "device": "AMX-10001",
+            "command": "//port/1/channel/7",
+            "normalized": false,
+            "cmdvalue": "Manual configuration",
+            "args": true,
+            "onebased": true
+        },
+        "x": 2050,
+        "y": 1000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2730b697df864147",
+        "type": "Command",
+        "z": "ed9a217f0f0892d5",
+        "g": "cab817aa74210f5c",
+        "name": "Bt Rele7 OFF",
+        "mojo": {
+            "device": "AMX-10001",
+            "command": "//port/1/channel/7",
+            "normalized": false,
+            "cmdvalue": "Manual configuration",
+            "args": false,
+            "onebased": true
+        },
+        "x": 2060,
+        "y": 1040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "94590d621017e17b",
+        "type": "Command",
+        "z": "ed9a217f0f0892d5",
+        "g": "cab817aa74210f5c",
+        "name": "Bt Rele8ON",
+        "mojo": {
+            "device": "AMX-10001",
+            "command": "//port/1/channel/8",
+            "normalized": false,
+            "cmdvalue": "Manual configuration",
+            "args": true,
+            "onebased": true
+        },
+        "x": 2050,
+        "y": 1080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "54777178a26be570",
+        "type": "Command",
+        "z": "ed9a217f0f0892d5",
+        "g": "cab817aa74210f5c",
+        "name": "Bt Rele8 OFF",
+        "mojo": {
+            "device": "AMX-10001",
+            "command": "//port/1/channel/8",
+            "normalized": false,
+            "cmdvalue": "Manual configuration",
+            "args": false,
+            "onebased": true
+        },
+        "x": 2060,
+        "y": 1120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "29cbc371ecbe734e",
+        "type": "UI Control",
+        "z": "ed9a217f0f0892d5",
+        "g": "67423a9b7cd26803",
+        "name": "UI Control",
+        "mojo": {
+            "cp": "1359b4b67ecf9670",
+            "type": "BUTTON",
+            "path": "//1/1",
+            "locator": {
+                "ccode": 1,
+                "cport": 1
+            },
+            "trigger": "PUSH",
+            "state": "NONE"
+        },
+        "x": 220,
+        "y": 360,
+        "wires": [
+            [
+                "0a025146911f9c4e"
+            ]
+        ]
+    },
+    {
+        "id": "dd4693140c0e6b9e",
+        "type": "function",
+        "z": "ed9a217f0f0892d5",
+        "g": "67423a9b7cd26803",
+        "name": "Comanda Rele e chiedi Stato",
+        "func": "var Stato;\n\nif (msg.payload==\"ComandaRele1\")\n    {\n    Stato = flow.get(\"Rele1\");\n    if (Stato == 'ON') msg.payload = \"Rele1Off\"\n    else msg.payload = \"Rele1On\"\n    }\n\nelse if (msg.payload == \"ComandaRele2\") \n    {\n    Stato = flow.get(\"Rele2\");\n    if (Stato == 'ON') msg.payload = \"Rele2Off\"\n    else msg.payload = \"Rele2On\"\n    }\n\nelse if (msg.payload == \"ComandaRele3\") {\n    Stato = flow.get(\"Rele3\");\n    if (Stato == 'ON') msg.payload = \"Rele3Off\"\n    else msg.payload = \"Rele3On\"\n}\n\nelse if (msg.payload == \"ComandaRele4\") {\n    Stato = flow.get(\"Rele4\");\n    if (Stato == 'ON') msg.payload = \"Rele4Off\"\n    else msg.payload = \"Rele4On\"\n}\n\nelse if (msg.payload == \"ComandaRele5\") {\n    Stato = flow.get(\"Rele5\");\n    if (Stato == 'ON') msg.payload = \"Rele5Off\"\n    else msg.payload = \"Rele5On\"\n}\n\nelse if (msg.payload == \"ComandaRele6\") {\n    Stato = flow.get(\"Rele6\");\n    if (Stato == 'ON') msg.payload = \"Rele6Off\"\n    else msg.payload = \"Rele6On\"\n}\n\nelse if (msg.payload == \"ComandaRele7\") {\n    Stato = flow.get(\"Rele7\");\n    if (Stato == 'ON') msg.payload = \"Rele7Off\"\n    else msg.payload = \"Rele7On\"\n}\n\nelse if (msg.payload == \"ComandaRele8\") {\n    Stato = flow.get(\"Rele8\");\n    if (Stato == 'ON') msg.payload = \"Rele8Off\"\n    else msg.payload = \"Rele8On\"\n}\n\nelse    {\n        // aggiungo il TOPIC all' oggetto per entrare nella sezione parsing\n        msg.topic =\"Richiesta Stato Rele\"\n        }\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 640,
+        "wires": [
+            [
+                "75bdb771b2611293"
+            ]
+        ]
+    },
+    {
+        "id": "0a025146911f9c4e",
+        "type": "trigger",
+        "z": "ed9a217f0f0892d5",
+        "g": "67423a9b7cd26803",
+        "name": "",
+        "op1": "ComandaRele1",
+        "op2": "StatoGenerale",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "100",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 420,
+        "y": 340,
+        "wires": [
+            [
+                "dd4693140c0e6b9e"
+            ]
+        ]
+    },
+    {
+        "id": "57c413933add88fe",
+        "type": "inject",
+        "z": "ed9a217f0f0892d5",
+        "g": "67423a9b7cd26803",
+        "name": "Rele1 TOGGLE",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 320,
+        "wires": [
+            [
+                "0a025146911f9c4e"
+            ]
+        ]
+    },
+    {
+        "id": "802836b2e6229014",
+        "type": "inject",
+        "z": "ed9a217f0f0892d5",
+        "g": "67423a9b7cd26803",
+        "name": "Rele2 TOGGLE",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 420,
+        "wires": [
+            [
+                "1ceb6cbcbf17baf6"
+            ]
+        ]
+    },
+    {
+        "id": "1ceb6cbcbf17baf6",
+        "type": "trigger",
+        "z": "ed9a217f0f0892d5",
+        "g": "67423a9b7cd26803",
+        "name": "",
+        "op1": "ComandaRele2",
+        "op2": "StatoGenerale",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "100",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 420,
+        "y": 420,
+        "wires": [
+            [
+                "dd4693140c0e6b9e"
+            ]
+        ]
+    },
+    {
+        "id": "ccd90fddb325504a",
+        "type": "UI Control",
+        "z": "ed9a217f0f0892d5",
+        "g": "67423a9b7cd26803",
+        "name": "UI Control",
+        "mojo": {
+            "cp": "1359b4b67ecf9670",
+            "type": "BUTTON",
+            "path": "//1/3",
+            "locator": {
+                "ccode": 2,
+                "cport": 1
+            },
+            "trigger": "PUSH",
+            "state": "NONE"
+        },
+        "x": 220,
+        "y": 460,
+        "wires": [
+            [
+                "1ceb6cbcbf17baf6"
+            ]
+        ]
+    },
+    {
+        "id": "0648470c9022caf4",
+        "type": "inject",
+        "z": "ed9a217f0f0892d5",
+        "g": "67423a9b7cd26803",
+        "name": "Rele3 TOGGLE",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 520,
+        "wires": [
+            [
+                "c9201f1a418b45e0"
+            ]
+        ]
+    },
+    {
+        "id": "c9201f1a418b45e0",
+        "type": "trigger",
+        "z": "ed9a217f0f0892d5",
+        "g": "67423a9b7cd26803",
+        "name": "",
+        "op1": "ComandaRele3",
+        "op2": "StatoGenerale",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "100",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 420,
+        "y": 520,
+        "wires": [
+            [
+                "dd4693140c0e6b9e"
+            ]
+        ]
+    },
+    {
+        "id": "9932fa6078c006a3",
+        "type": "UI Control",
+        "z": "ed9a217f0f0892d5",
+        "g": "67423a9b7cd26803",
+        "name": "UI Control",
+        "mojo": {
+            "cp": "1359b4b67ecf9670",
+            "type": "BUTTON",
+            "path": "//1/5",
+            "locator": {
+                "ccode": 3,
+                "cport": 1
+            },
+            "trigger": "PUSH",
+            "state": "NONE"
+        },
+        "x": 220,
+        "y": 560,
+        "wires": [
+            [
+                "c9201f1a418b45e0"
+            ]
+        ]
+    },
+    {
+        "id": "5ab586bf910ac45b",
+        "type": "inject",
+        "z": "ed9a217f0f0892d5",
+        "g": "67423a9b7cd26803",
+        "name": "Rele4 TOGGLE",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 620,
+        "wires": [
+            [
+                "ff4d4b75841c812e"
+            ]
+        ]
+    },
+    {
+        "id": "ff4d4b75841c812e",
+        "type": "trigger",
+        "z": "ed9a217f0f0892d5",
+        "g": "67423a9b7cd26803",
+        "name": "",
+        "op1": "ComandaRele4",
+        "op2": "StatoGenerale",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "100",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 420,
+        "y": 620,
+        "wires": [
+            [
+                "dd4693140c0e6b9e"
+            ]
+        ]
+    },
+    {
+        "id": "d8797ffb44a93283",
+        "type": "UI Control",
+        "z": "ed9a217f0f0892d5",
+        "g": "67423a9b7cd26803",
+        "name": "UI Control",
+        "mojo": {
+            "cp": "1359b4b67ecf9670",
+            "type": "BUTTON",
+            "path": "//1/7",
+            "locator": {
+                "ccode": 4,
+                "cport": 1
+            },
+            "trigger": "PUSH",
+            "state": "NONE"
+        },
+        "x": 220,
+        "y": 660,
+        "wires": [
+            [
+                "ff4d4b75841c812e"
+            ]
+        ]
+    },
+    {
+        "id": "6c1b3f20bb964646",
+        "type": "inject",
+        "z": "ed9a217f0f0892d5",
+        "g": "67423a9b7cd26803",
+        "name": "Rele5 TOGGLE",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 720,
+        "wires": [
+            [
+                "63acd6932c1d13a1"
+            ]
+        ]
+    },
+    {
+        "id": "63acd6932c1d13a1",
+        "type": "trigger",
+        "z": "ed9a217f0f0892d5",
+        "g": "67423a9b7cd26803",
+        "name": "",
+        "op1": "ComandaRele5",
+        "op2": "StatoGenerale",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "100",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 420,
+        "y": 720,
+        "wires": [
+            [
+                "dd4693140c0e6b9e"
+            ]
+        ]
+    },
+    {
+        "id": "676f7a1314fa39f8",
+        "type": "UI Control",
+        "z": "ed9a217f0f0892d5",
+        "g": "67423a9b7cd26803",
+        "name": "UI Control",
+        "mojo": {
+            "cp": "1359b4b67ecf9670",
+            "type": "BUTTON",
+            "path": "//1/9",
+            "locator": {
+                "ccode": 5,
+                "cport": 1
+            },
+            "trigger": "PUSH",
+            "state": "NONE"
+        },
+        "x": 220,
+        "y": 760,
+        "wires": [
+            [
+                "63acd6932c1d13a1"
+            ]
+        ]
+    },
+    {
+        "id": "94c72d79740aecd5",
+        "type": "inject",
+        "z": "ed9a217f0f0892d5",
+        "g": "67423a9b7cd26803",
+        "name": "Rele6 TOGGLE",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 820,
+        "wires": [
+            [
+                "b27a6206fb2efceb"
+            ]
+        ]
+    },
+    {
+        "id": "b27a6206fb2efceb",
+        "type": "trigger",
+        "z": "ed9a217f0f0892d5",
+        "g": "67423a9b7cd26803",
+        "name": "",
+        "op1": "ComandaRele6",
+        "op2": "StatoGenerale",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "100",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 420,
+        "y": 820,
+        "wires": [
+            [
+                "dd4693140c0e6b9e"
+            ]
+        ]
+    },
+    {
+        "id": "29c8691dc52b925b",
+        "type": "UI Control",
+        "z": "ed9a217f0f0892d5",
+        "g": "67423a9b7cd26803",
+        "name": "UI Control",
+        "mojo": {
+            "cp": "1359b4b67ecf9670",
+            "type": "BUTTON",
+            "path": "//1/11",
+            "locator": {
+                "ccode": 6,
+                "cport": 1
+            },
+            "trigger": "PUSH",
+            "state": "NONE"
+        },
+        "x": 220,
+        "y": 860,
+        "wires": [
+            [
+                "b27a6206fb2efceb"
+            ]
+        ]
+    },
+    {
+        "id": "2fd3b0230b0cc7da",
+        "type": "inject",
+        "z": "ed9a217f0f0892d5",
+        "g": "67423a9b7cd26803",
+        "name": "Rele7 TOGGLE",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 920,
+        "wires": [
+            [
+                "ac704d0d87b5532e"
+            ]
+        ]
+    },
+    {
+        "id": "ac704d0d87b5532e",
+        "type": "trigger",
+        "z": "ed9a217f0f0892d5",
+        "g": "67423a9b7cd26803",
+        "name": "",
+        "op1": "ComandaRele7",
+        "op2": "StatoGenerale",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "100",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 420,
+        "y": 920,
+        "wires": [
+            [
+                "dd4693140c0e6b9e"
+            ]
+        ]
+    },
+    {
+        "id": "1a043a26425c537b",
+        "type": "UI Control",
+        "z": "ed9a217f0f0892d5",
+        "g": "67423a9b7cd26803",
+        "name": "UI Control",
+        "mojo": {
+            "cp": "1359b4b67ecf9670",
+            "type": "BUTTON",
+            "path": "//1/13",
+            "locator": {
+                "ccode": 7,
+                "cport": 1
+            },
+            "trigger": "PUSH",
+            "state": "NONE"
+        },
+        "x": 220,
+        "y": 960,
+        "wires": [
+            [
+                "ac704d0d87b5532e"
+            ]
+        ]
+    },
+    {
+        "id": "9c28d5563f9c3b34",
+        "type": "inject",
+        "z": "ed9a217f0f0892d5",
+        "g": "67423a9b7cd26803",
+        "name": "Rele8 TOGGLE",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 1020,
+        "wires": [
+            [
+                "9d9196a6c51d22d0"
+            ]
+        ]
+    },
+    {
+        "id": "9d9196a6c51d22d0",
+        "type": "trigger",
+        "z": "ed9a217f0f0892d5",
+        "g": "67423a9b7cd26803",
+        "name": "",
+        "op1": "ComandaRele8",
+        "op2": "StatoGenerale",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "100",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 420,
+        "y": 1020,
+        "wires": [
+            [
+                "dd4693140c0e6b9e"
+            ]
+        ]
+    },
+    {
+        "id": "cad65622b1d99f19",
+        "type": "UI Control",
+        "z": "ed9a217f0f0892d5",
+        "g": "67423a9b7cd26803",
+        "name": "UI Control",
+        "mojo": {
+            "cp": "1359b4b67ecf9670",
+            "type": "BUTTON",
+            "path": "//1/15",
+            "locator": {
+                "ccode": 8,
+                "cport": 1
+            },
+            "trigger": "PUSH",
+            "state": "NONE"
+        },
+        "x": 220,
+        "y": 1060,
+        "wires": [
+            [
+                "9d9196a6c51d22d0"
+            ]
+        ]
+    },
+    {
+        "id": "3e49280233bc384f",
+        "type": "comment",
+        "z": "ed9a217f0f0892d5",
+        "name": "admin; PzSoluzioni2024",
+        "info": "",
+        "x": 140,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "7676414a63f29b4d",
+        "type": "link out",
+        "z": "ed9a217f0f0892d5",
+        "g": "5899172ec603b347",
+        "name": "Rele Pulse 1",
+        "mode": "link",
+        "links": [
+            "2d8ba3c9c4eec960"
+        ],
+        "x": 335,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "2d8ba3c9c4eec960",
+        "type": "link in",
+        "z": "ed9a217f0f0892d5",
+        "name": "Gestione Comandi ETH008",
+        "links": [
+            "7676414a63f29b4d",
+            "271af57b1df9827e",
+            "984ab6e1b5c74589",
+            "16bf9d5d0cf3bf95",
+            "0e2072374e052cb5",
+            "70cb576b94c5fcaf",
+            "663344bbab22280c",
+            "6f05e33d484450a2",
+            "75bdb771b2611293"
+        ],
+        "x": 375,
+        "y": 160,
+        "wires": [
+            [
+                "2565c7216b3313d8"
+            ]
+        ]
+    },
+    {
+        "id": "271af57b1df9827e",
+        "type": "link out",
+        "z": "ed9a217f0f0892d5",
+        "g": "5899172ec603b347",
+        "name": "Rele Pulse 2",
+        "mode": "link",
+        "links": [
+            "2d8ba3c9c4eec960"
+        ],
+        "x": 335,
+        "y": 1320,
+        "wires": []
+    },
+    {
+        "id": "984ab6e1b5c74589",
+        "type": "link out",
+        "z": "ed9a217f0f0892d5",
+        "g": "5899172ec603b347",
+        "name": "Rele Pulse 3",
+        "mode": "link",
+        "links": [
+            "2d8ba3c9c4eec960"
+        ],
+        "x": 335,
+        "y": 1360,
+        "wires": []
+    },
+    {
+        "id": "16bf9d5d0cf3bf95",
+        "type": "link out",
+        "z": "ed9a217f0f0892d5",
+        "g": "5899172ec603b347",
+        "name": "Rele Pulse 4",
+        "mode": "link",
+        "links": [
+            "2d8ba3c9c4eec960"
+        ],
+        "x": 335,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "0e2072374e052cb5",
+        "type": "link out",
+        "z": "ed9a217f0f0892d5",
+        "g": "5899172ec603b347",
+        "name": "Rele Pulse 5",
+        "mode": "link",
+        "links": [
+            "2d8ba3c9c4eec960"
+        ],
+        "x": 335,
+        "y": 1440,
+        "wires": []
+    },
+    {
+        "id": "70cb576b94c5fcaf",
+        "type": "link out",
+        "z": "ed9a217f0f0892d5",
+        "g": "5899172ec603b347",
+        "name": "Rele Pulse 6",
+        "mode": "link",
+        "links": [
+            "2d8ba3c9c4eec960"
+        ],
+        "x": 335,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "663344bbab22280c",
+        "type": "link out",
+        "z": "ed9a217f0f0892d5",
+        "g": "5899172ec603b347",
+        "name": "Rele Pulse 7",
+        "mode": "link",
+        "links": [
+            "2d8ba3c9c4eec960"
+        ],
+        "x": 335,
+        "y": 1520,
+        "wires": []
+    },
+    {
+        "id": "6f05e33d484450a2",
+        "type": "link out",
+        "z": "ed9a217f0f0892d5",
+        "g": "5899172ec603b347",
+        "name": "Rele Pulse 8",
+        "mode": "link",
+        "links": [
+            "2d8ba3c9c4eec960"
+        ],
+        "x": 335,
+        "y": 1560,
+        "wires": []
+    },
+    {
+        "id": "bb693ea94c442e2d",
+        "type": "inject",
+        "z": "ed9a217f0f0892d5",
+        "g": "5899172ec603b347",
+        "name": "Rele1Pulse",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "Rele1Pulse",
+        "payload": "Rele1Pulse",
+        "payloadType": "str",
+        "x": 210,
+        "y": 1280,
+        "wires": [
+            [
+                "7676414a63f29b4d"
+            ]
+        ]
+    },
+    {
+        "id": "c097712edf1c8489",
+        "type": "inject",
+        "z": "ed9a217f0f0892d5",
+        "g": "5899172ec603b347",
+        "name": "Rele3Pulse",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "Rele3Pulse",
+        "payload": "Rele3Pulse",
+        "payloadType": "str",
+        "x": 210,
+        "y": 1360,
+        "wires": [
+            [
+                "984ab6e1b5c74589"
+            ]
+        ]
+    },
+    {
+        "id": "03f551159c4c6114",
+        "type": "inject",
+        "z": "ed9a217f0f0892d5",
+        "g": "5899172ec603b347",
+        "name": "Rele2Pulse",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "Rele2Pulse",
+        "payload": "Rele2Pulse",
+        "payloadType": "str",
+        "x": 210,
+        "y": 1320,
+        "wires": [
+            [
+                "271af57b1df9827e"
+            ]
+        ]
+    },
+    {
+        "id": "59c281e7c6ad1201",
+        "type": "inject",
+        "z": "ed9a217f0f0892d5",
+        "g": "5899172ec603b347",
+        "name": "Rele4Pulse",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "Rele4Pulse",
+        "payload": "Rele4Pulse",
+        "payloadType": "str",
+        "x": 210,
+        "y": 1400,
+        "wires": [
+            [
+                "16bf9d5d0cf3bf95"
+            ]
+        ]
+    },
+    {
+        "id": "bec8412b03108d45",
+        "type": "inject",
+        "z": "ed9a217f0f0892d5",
+        "g": "5899172ec603b347",
+        "name": "Rele6Pulse",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "Rele6Pulse",
+        "payload": "Rele6Pulse",
+        "payloadType": "str",
+        "x": 210,
+        "y": 1480,
+        "wires": [
+            [
+                "70cb576b94c5fcaf"
+            ]
+        ]
+    },
+    {
+        "id": "9da598856d4bae4f",
+        "type": "inject",
+        "z": "ed9a217f0f0892d5",
+        "g": "5899172ec603b347",
+        "name": "Rele5Pulse",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "Rele5Pulse",
+        "payload": "Rele5Pulse",
+        "payloadType": "str",
+        "x": 210,
+        "y": 1440,
+        "wires": [
+            [
+                "0e2072374e052cb5"
+            ]
+        ]
+    },
+    {
+        "id": "73f06ff7115c0425",
+        "type": "inject",
+        "z": "ed9a217f0f0892d5",
+        "g": "5899172ec603b347",
+        "name": "Rele8Pulse",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "Rele8Pulse",
+        "payload": "Rele8Pulse",
+        "payloadType": "str",
+        "x": 210,
+        "y": 1560,
+        "wires": [
+            [
+                "6f05e33d484450a2"
+            ]
+        ]
+    },
+    {
+        "id": "4b52f7c5e0772ab6",
+        "type": "inject",
+        "z": "ed9a217f0f0892d5",
+        "g": "5899172ec603b347",
+        "name": "Rele7Pulse",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "Rele7Pulse",
+        "payload": "Rele7Pulse",
+        "payloadType": "str",
+        "x": 210,
+        "y": 1520,
+        "wires": [
+            [
+                "663344bbab22280c"
+            ]
+        ]
+    },
+    {
+        "id": "75bdb771b2611293",
+        "type": "link out",
+        "z": "ed9a217f0f0892d5",
+        "g": "67423a9b7cd26803",
+        "name": "link out 1",
+        "mode": "link",
+        "links": [
+            "2d8ba3c9c4eec960"
+        ],
+        "x": 965,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "48b5a68978214523",
+        "type": "link out",
+        "z": "ed9a217f0f0892d5",
+        "name": "Risposta ETH008",
+        "mode": "link",
+        "links": [
+            "735c6963bab4b9ee"
+        ],
+        "x": 965,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "735c6963bab4b9ee",
+        "type": "link in",
+        "z": "ed9a217f0f0892d5",
+        "name": "link in 1",
+        "links": [
+            "48b5a68978214523"
+        ],
+        "x": 1075,
+        "y": 880,
+        "wires": [
+            [
+                "8206c7f43b522435"
+            ]
+        ]
+    }
+]
